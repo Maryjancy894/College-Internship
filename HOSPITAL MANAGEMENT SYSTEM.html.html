@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Management System</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#0077b6;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#023e8a;
+            padding:15px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        .hero{
+            text-align:center;
+            padding:50px;
+            background:white;
+        }
+
+        .hero h1{
+            color:#0077b6;
+        }
+
+        .container{
+            width:80%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin-top:20px;
+            border-radius:10px;
+            box-shadow:0px 0px 10px gray;
+        }
+
+        input{
+            width:100%;
+            padding:12px;
+            margin-top:10px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:12px 20px;
+            background:#0077b6;
+            color:white;
+            border:none;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+        footer{
+            background:#023e8a;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>City Hospital</h1>
+        <p>Hospital Management System</p>
+    </header>
+
+    <nav>
+        <a href="">Home</a>
+        <a href="">Doctors</a>
+        <a href="">Patients</a>
+        <a href="">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Welcome to City Hospital</h1>
+        <p>24/7 Emergency and Patient Care</p>
+    </section>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Patient Registration</h2>
+
+            <input type="text" placeholder="Enter Patient Name">
+
+            <input type="number" placeholder="Enter Age">
+
+            <input type="text" placeholder="Enter Disease">
+
+            <button onclick="registerPatient()">
+                Register
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Doctor Details</h2>
+
+            <p>Dr. Arun - Cardiologist</p>
+            <p>Dr. Priya - Neurologist</p>
+            <p>Dr. Kumar - Orthopedic</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>Appointment Booking</h2>
+
+            <input type="text" placeholder="Enter Patient Name">
+
+            <input type="date">
+
+            <button onclick="bookAppointment()">
+                Book Appointment
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 City Hospital
+    </footer>
+
+    <script>
+
+        function registerPatient(){
+
+            alert("Patient Registered Successfully!");
+
+        }
+
+        function bookAppointment(){
+
+            alert("Appointment Booked Successfully!");
+
+        }
+
+    </script>
+
+</body>
+</html>
